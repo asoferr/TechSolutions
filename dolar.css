@@ -1,0 +1,133 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Fundo suave */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    margin: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 1.5rem 0;
+    width: 100%;
+    position: fixed; /* Cabeçalho fixo na parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que o cabeçalho fique sobre outros elementos */
+}
+
+header .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 2rem 0;
+    
+    width: 100%;
+    margin-top: 5rem; /* Espaço para o cabeçalho fixo */
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilo do fieldset */
+fieldset {
+    border: 2px solid #1e2a38; 
+    border-radius: 8px; 
+    padding: 1rem; 
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; 
+    margin: 2rem; 
+}
+
+/* Estilo do legend */
+legend {
+    font-size: 1.5rem; /* Tamanho da fonte do título */
+    color: #1e2a38; /* Cor do título */
+}
+
+/* Estilo dos títulos de valor */
+h1.valor {
+    font-size: 1.25rem; /* Tamanho da fonte reduzido */
+    color: #1e2a38; /* Cor do texto */
+    margin: 0.5rem 0; /* Espaçamento vertical reduzido */
+}
+
+/* Estilo dos quadrados */
+.quadrado {
+    background-color: #f9f9f9; /* Fundo suave */
+    border: 1px solid #ccc; /* Borda do quadrado */
+    border-radius: 4px; /* Borda arredondada */
+    padding: 0.5rem; /* Espaçamento interno reduzido */
+    text-align: center; /* Centraliza o texto */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s; /* Transição suave */
+    margin: 0.5rem auto; /* Espaçamento automático e vertical ajustado */
+    width: 100%; /* Ocupa toda a largura disponível dentro do fieldset */
+    max-width: 250px; /* Largura máxima ajustada */
+}
+
+.quadrado:hover {
+    transform: scale(1.03); /* Aumenta um pouco ao passar o mouse */
+}
+
+/* Estilo dos valores */
+#valorDolar, #dolarMax, #dolarMin {
+    font-size: 1.2rem; /* Tamanho da fonte dos valores */
+    color: #00796b; /* Cor dos valores */
+    font-weight: bold; /* Negrito */
+}
+
+footer {
+    background: #1e2a38;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

@@ -1,0 +1,113 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+   
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: color 0.3s; /* Transição suave para hover */
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%; /* Mudando para 100% para ocupar a largura do container */
+    max-width: 500px; /* Aumentando a largura máxima do main */
+    text-align: center;
+}
+
+#imagem {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: auto; /* Permite que a imagem ajuste conforme necessário */
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+}
+
+#album, #ano, #genero, #fabricante, #preco {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #ff5722;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clima</title>
+    <link rel="stylesheet" href="clima.css">
+</head>
+<body>
+    <header>
+        <div class="container1">
+            <h1>Previsão do Clima</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="E-comerce.html">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1 onclick="location.href ='index.html'">Clima</h1>
+            <br>
+            <p>Digite o nome da Cidade</p>
+            <div class="input-group">
+                <input type="text" id="cidade" placeholder="Nome da cidade">
+                <button onclick="getWeather()">Pesquisar</button>
+            </div>
+            <div id="temperatura">Esperando...</div>
+        </div>
+    </main>
+        
+    <footer>
+
+            <p>&copy; 2024 API TechSolutions - Todos os direitos reservados por Sofia Alcântara Ferreira</p>
+        
+    </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> <!-- Inclui o Axios -->
+        <script>
+            async function getWeather() {
+                //Variavel que pega o valor do Input cidade
+                var cidade = document.getElementById('cidade').value
+            
+            
+                //Conectando a API
+                var resposta = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&units=metric&appid=64ed82577ced7f69cb1687f0ce536131`)
+            
+                //Variavel para consumir o JSON do item temperatura
+                var TempCelsius = resposta.data.main.temp;
+            
+                console.log(TempCelsius)
+                //Imprimir na tela fornt-end utilizando JQUERY
+                document.getElementById('temperatura').innerHTML = `A temperatura atual de ${cidade} é: ${TempCelsius.toFixed(0)} °C`
+            
+            
+            }  
+            //Chamar a Função
+            getWeather()
+        </script>
+        
+</body>
+</html>

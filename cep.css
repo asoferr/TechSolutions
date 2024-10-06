@@ -1,0 +1,133 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0; /* Cor de fundo suave */
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff9800; /* Cor laranja para hover */
+    text-decoration: underline;
+}
+
+button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    background: #ff5722; /* Laranja */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    margin-top: 1rem;
+}
+
+
+
+.div {
+    background: #ffffff; /* Fundo branco para o formulário */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+fieldset {
+    border: 1px solid #1e2a38; /* Borda do fieldset */
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+legend {
+    color: #1e2a38; /* Cor do título do fieldset */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+label {
+    display: block; /* Faz os labels ocuparem a largura total */
+    margin-bottom: 0.5rem;
+    color: #333; /* Cor dos labels */
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%; /* Largura total dos inputs */
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc; /* Borda dos inputs */
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border: 1px solid #ff5722; /* Borda laranja no foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+input[readonly] {
+    background: #e9ecef; /* Cor de fundo para inputs readonly */
+}
+
+input[type="text"]:hover,
+input[type="number"]:hover {
+    border: 1px solid #999; /* Borda ao passar o mouse */
+}
+
+footer {
+    background: #1e2a38; /* Cor escura para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    margin-top: 2rem; /* Espaçamento acima do rodapé */
+}

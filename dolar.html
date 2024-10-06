@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="5">
+    <title>Valor do Dólar</title>
+    <link rel="stylesheet" href="dolar.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Cotação do Dólar</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="e-comerce.html">Produtos</a></li>
+                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <fieldset>
+                <legend>Valor do Dólar</legend>
+                
+                <h1 class="valor">Valor Atual</h1>
+                <div class="quadrado">
+                    <p id="valorDolar"></p>
+                </div>
+                <br>
+                <h1 class="valor">Valor Máximo do Dia</h1>
+                <div class="quadrado">
+                    <p id="dolarMax"></p>
+                </div>
+                <br>
+                <h1 class="valor">Valor Mínimo do Dia</h1>
+                <div class="quadrado">
+                    <p id="dolarMin"></p>
+                </div>
+            </fieldset>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 API TechSolutions - Todos os direitos reservados por Sofia Alcântara Ferreira</p>
+        </div>
+    </footer>
+
+    <script>
+        fetch('https://economia.awesomeapi.com.br/last/USD-BRL').then(resposta => {
+            return resposta.json()
+        }
+    ).then(economia => {
+                document.getElementById('valorDolar').innerHTML = `R$ ${economia.USDBRL.bid}`;
+                document.getElementById('dolarMax').innerHTML = `R$ ${economia.USDBRL.high}`;
+                document.getElementById('dolarMin').innerHTML = `R$ ${economia.USDBRL.low}`;
+            })
+            
+    </script>
+</body>
+</html>

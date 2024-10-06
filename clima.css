@@ -1,0 +1,135 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+    text-decoration: underline;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 650px; /* Largura máxima do container */
+    background: #ffffff; /* Fundo branco para o container */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    text-align: center; /* Centraliza o texto */
+    margin: 2rem auto; /* Margens automáticas para centralizar horizontalmente */
+    /* Ajuste a margem superior conforme necessário */
+    /* Você pode usar um valor fixo ou uma porcentagem dependendo do layout */
+}
+
+
+
+
+p {
+    margin-bottom: 1.5rem; /* Espaço abaixo do parágrafo */
+}
+
+.input-group {
+    display: flex; /* Alinha o input e o botão horizontalmente */
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    padding: 0.75rem;
+    border: 1px solid #ccc; /* Borda do input */
+    border-radius: 5px 0 0 5px; /* Bordas arredondadas no lado esquerdo */
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #ff5722; /* Borda laranja no foco */
+    outline: none; /* Remove o contorno padrão */
+}
+
+button {
+    padding: 0.75rem 1rem;
+    background: #ff5722; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    border-radius: 0 5px 5px 0; /* Bordas arredondadas no lado direito */
+    font-size: 1rem;
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #e64a19; /* Cor do botão ao passar o mouse */
+}
+
+#temperatura {
+    margin-top: 1rem; /* Espaçamento acima da div de temperatura */
+    font-size: 1.5rem; /* Tamanho da fonte da temperatura */
+    color: #1e2a38; /* Cor da temperatura */
+}
+
+
+footer {
+    background: #1e2a38; /* Cor escura para o rodapé */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%; /* Garante que o footer ocupe toda a largura */
+    position: absolute; /* Muda a posição para absoluta */
+    bottom: 0; /* Gruda o footer na parte inferior */
+}
+
+
+/* Estilo adicional para tornar o footer mais bonito */
+footer p {
+    margin: 0; /* Remove margem para o parágrafo no footer */
+    font-size: 1rem; /* Tamanho da fonte do footer */
+}
